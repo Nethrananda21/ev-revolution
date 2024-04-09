@@ -1,0 +1,1503 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans&family=Open+Sans&family=Roboto&display=swap');
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    color: #2A353C;
+    background-color: #F4F4F9;
+    /* min-height: 100vh; */
+    font-size: 1.4rem;
+}
+
+/* Headings and logo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 12%;
+    line-height: 4.687rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #B8DBD9;
+    z-index: 5;
+    overflow: hidden;
+    box-shadow: 0 0 7px #2A353C;
+    font-family: Lato, Merriweather, sans-serif;
+}
+
+.header-menu a {
+    text-decoration: none;
+}
+
+#logo {
+    margin: 1rem 0 0 4rem;
+    font-size: 2.5rem;
+    color: #045839;
+}
+
+/* Navigation links */
+.header-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-menu {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    display: flex;
+    margin-right: 3rem;
+}
+
+#nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: #141414;
+}
+
+#nav-menu a:hover {
+    color: #045839;
+}
+
+#nav-menu ul>li>.sign-up {
+    border: 1px solid #F4F4F9;
+    border-radius: 20px;
+    background-color: #045839;
+    color: #F4F4F9;
+    padding: 0.125em 0.125em 0.3125em 0.3125em;
+}
+
+.active {
+    border-bottom: 3px solid #045839;
+}
+
+/* Home Page Main Image and overlay text*/
+#image-container {
+    position: relative;
+    width: 100%;
+    height: 37.5rem;
+    overflow: hidden;
+}
+
+#main-image {
+    height: 37.5rem;
+    max-width: 100%;
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://etimg.etb2bimg.com/photo/72029767.cms);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #B8DBD9;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.overlay-text,
+.overlay-text h2,
+.overlay-text h3 {
+    color: #B8DBD9;
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.25rem;
+    padding: 1em;
+    margin: 1rem;
+    position: absolute;
+    color: #B8DBD9;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px #F4F4F9;
+    bottom: 9%;
+    left: 12%;
+}
+
+h2 {
+    color: #141414;
+    font-family: Lato, sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+/* About section - home page*/
+#about {
+    min-height: 37.5vh;
+}
+
+.aim {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact-link {
+    margin-bottom: 1rem;
+    font-style: oblique;
+    color: #045839;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.about-ev {
+    width: 100%;
+    text-align: center;
+}
+
+.about-ev h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-ev p {
+    margin: 0 3rem 2rem 3rem;
+    text-align: center;
+}
+
+.video {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.video-frame {
+    margin-bottom: 2%;
+}
+
+.video iframe {
+    width: 60%;
+    border: none;
+    height: 500px;
+}
+
+/* Checkout list content section home page */
+#list-container {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #B8DBD9;
+}
+
+.check-out-text {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    font-weight: bold;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+#list-container .check-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 18.75%;
+}
+
+.check-out-list {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0.75rem 0.75rem 0.3rem #141414;
+    margin: 3rem 7rem 8rem 0;
+    padding: 1rem;
+}
+
+.effect {
+    transition: ease-out 1s;
+}
+
+.effect:hover {
+    width: 35%;
+    height: 480px;
+    background-color: #63b0ac;
+    box-shadow: 1rem 1rem 2rem #141414;
+}
+
+.checklist li {
+    list-style-type: none;
+    line-height: 1.7;
+    font-weight: 800;
+    margin: 1.5rem;
+    font-family: Merriweather, Roboto, sans-serif;
+    text-align: center;
+}
+
+.checklist a {
+    text-decoration: none;
+    color: #2A353C;
+}
+
+.checklist a:hover {
+    color: #141414;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+/** Footer content **/
+/********************/
+footer {
+    height: 12%;
+    width: 100%;
+    background-color: #2A353C;
+    color: #F4F4F9;
+    display: flex;
+    z-index: 1;
+    border-top: 3px solid #045839;
+}
+
+footer div {
+    width: 20%;
+    margin: 32px 30px 0 30px;
+}
+
+#social-links {
+    text-align: center;
+    width: 80%;
+}
+
+#social-links>li {
+    display: inline;
+}
+
+#social-links i {
+    font-size: 2rem;
+    margin: 2rem 3rem;
+    color: #F4F4F9;
+}
+
+#social-links i:hover {
+    color: #045839;
+}
+
+/**********Insight Page ***********/
+/* Background image */
+#bgc-image {
+    height: 37.5rem;
+    max-width: 100%;
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://etimg.etb2bimg.com/photo/72029767.cms);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #B8DBD9;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+#insights-image {
+    height: 37.5rem;
+    max-width: 100%;
+    background: url("../images/insights-page-bgimage.webp") no-repeat center center;
+    background-color: #B8DBD9;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.cover-text,
+.cover-text h2,
+.cover-text h3 {
+    color: #B8DBD9;
+}
+
+.cover-text {
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.25rem;
+    padding: 1em;
+    margin: 2rem;
+    position: absolute;
+    color: #B8DBD9;
+    background-color: #141414;
+    opacity: 0.8;
+    bottom: 9%;
+    right: 13.6%;
+    text-shadow: 1px 1px 2px #F4F4F9;
+    box-sizing: border-box;
+}
+
+/*** Topic content insights page ***/
+#intro-heading {
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    color: #141414;
+}
+
+#intro-heading p {
+    margin: 1rem;
+}
+
+#chart-header {
+    color: #141414;
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+
+.chart-bar {
+    overflow: hidden !important;
+    padding: 1em;
+}
+
+#chart-bar iframe {
+    width: 100%;
+    height: 28.5rem;
+    overflow: hidden !important;
+    margin-bottom: 9%;
+}
+
+.why-ev,
+.misconceptions,
+.benefits,
+.types {
+    text-align: center;
+    margin-bottom: 0.8em;
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+.misconceptions p {
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.list li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.benefits p {
+    margin-top: 1rem;
+}
+
+.benefit-list li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.ev-types h4 {
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+/** Topic container **/
+.topic-container {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr;
+    gap: 0.5rem 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-box {
+    margin: 1.5rem 1.5rem 2rem 2rem;
+}
+
+.topic-box3,
+.topic-box4,
+.topic-box5,
+.topic-box6 {
+    border: 1px solid #141414;
+    border-radius: 8px;
+}
+
+.topic-box5,
+.topic-box6 {
+    grid-column: span 2;
+}
+
+.topic-box1 {
+    margin: auto 0;
+    margin-right: 2rem;
+    height: 700px;
+}
+
+.topic-box:nth-child(2) {
+    border-style: none;
+    align-self: center;
+    margin: auto 0;
+    margin-left: 2rem;
+}
+
+.topic-box:nth-child(3) {
+    justify-self: center;
+    align-self: center;
+    margin: 2rem;
+    padding: 1em;
+    box-shadow: 0.75rem 0.75rem 0.3rem #B8DBD9;
+}
+
+.topic-box:nth-child(4) {
+    justify-self: center;
+    align-self: center;
+    margin: 2rem;
+    padding: 1em;
+    box-shadow: 0.75rem 0.75rem 0.3rem #B8DBD9;
+}
+
+.topic-box:nth-child(5) {
+    box-shadow: 0.75rem 0.75rem 0.3rem #B8DBD9;
+    padding: 1em;
+    justify-self: center;
+    margin: 2rem 4rem 3rem 3rem;
+}
+
+.topic-box:nth-child(6) {
+    box-shadow: 0.75rem 0.75rem 0.3rem #B8DBD9;
+    justify-self: center;
+    margin: 2rem 4rem 3rem 3rem;
+    padding: 1em;
+}
+
+.transition {
+    transition: transform 0.4s ease-out;
+}
+
+.transition:hover {
+    transform: translateY(3px);
+}
+
+/*** Option content insight page ***/
+.option-area {
+    width: 100%;
+}
+
+.options {
+    margin: 1rem;
+}
+
+.options h3 {
+    padding: 1.5em 0 1.5em 0;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #141414;
+    margin-top: 4rem;
+}
+
+.options p {
+    padding: 0 1.5rem 2rem 1.5rem;
+    text-align: center;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.options p>span,
+.ev-types p>span {
+    font-weight: bold;
+}
+
+/********* Option container insights page ***********/
+.option-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+}
+
+.option-charger,
+.option-wireless,
+.option-dynamic {
+    display: flex;
+    place-items: center;
+    min-height: 37.25%;
+}
+
+.charger {
+    margin: 1%;
+    flex: 50%;
+}
+
+.charger h3 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #141414;
+}
+
+.charger ul li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.charger-img {
+    width: 450px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.wirless {
+    margin: 1rem;
+    flex: 50%;
+}
+
+.wirless img {
+    align-self: center;
+    margin-left: 8rem;
+    width: 450px;
+}
+
+.wirless h3 {
+    text-align: left;
+    margin: 2rem 0 1rem 1rem;
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+.wirless p {
+    text-align: left;
+    margin: 0 4.8rem 1rem 1rem;
+}
+
+.dynamic {
+    margin: 0.5rem;
+    flex: 50%;
+}
+
+.dynamic h3 {
+    text-align: left;
+    margin: 0 0 1rem 6rem;
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+.dynamic p {
+    text-align: left;
+    margin: 0 1rem 2rem 6rem;
+}
+
+.dynamic .soon {
+    margin-bottom: 4rem;
+}
+
+.dynamic-img {
+    margin: 3rem 0 9rem 0;
+    width: 450px;
+    align-self: center;
+}
+
+/**** Sign Up Form Page Content*****/
+.form-section {
+    min-height: 75rem;
+    background: url("../images/charging-bg-image.jpg");
+    background-position: center top;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.signup-form {
+    background-color: #141414;
+    opacity: 0.8;
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    padding: 1.5rem;
+    margin: 11.38rem 0.1rem 0 0;
+}
+
+.signup-form h2 {
+    color: #B8DBD9;
+    font-family: Lato, sans-serif;
+    margin-bottom: 1.25rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.signup-form p {
+    margin-bottom: 3rem;
+    color: #B8DBD9;
+    text-align: center;
+}
+
+/* Text input field*/
+.text-input {
+    background: transparent;
+    color: #B8DBD9;
+    height: 1.8rem;
+    width: 100%;
+    border: 1px solid #B8DBD9;
+    margin: 0.32rem 0 1.5rem 0;
+    border-radius: 3px;
+}
+
+label {
+    color: #B8DBD9;
+}
+
+.text-input:hover {
+    border-color: #F4F4F9;
+}
+
+.join-button {
+    display: block;
+    font-size: 100%;
+    width: 100%;
+    padding: 1rem 2rem 1rem 1rem;
+    text-align: center;
+    background-color: #045839;
+    color: #F4F4F9;
+    margin: 1rem 0 0.8rem 0;
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.join-button:hover {
+    background-color: #F4F4F9;
+    color: #045839;
+}
+
+.signup-form .privacy {
+    font-size: 0.8rem;
+    color: #F4F4F9;
+    text-align: center;
+}
+
+/* Display change Proerties for flip card*/
+/**********Feedback *****/
+
+.flip-wrapper {
+    min-height: 75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 10px;
+}
+
+.flip-front {
+    background-color: #63b0ac;
+    /* background: linear-gradient(#08aeea, #2af598 #f8da61, #ff5acd); */
+    color: #2A353C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    text-align: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+    z-index: 1;
+    background-color: #045839;
+    color: #F4F4F9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    font-size: 2.5rem;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+
+
+/***** Media Queries ruleset from 576px - 1280px *****/
+/*****************************************************/
+/**  Media Query for large screen sizes from 1280px wide and down **/
+/* Header and logo */
+@media screen and (max-width: 1280px) {
+
+    /* Navigation links */
+    #nav-menu {
+        margin-right: 2.5rem;
+    }
+
+    /* Home page Main Image overlay text*/
+    .overlay-text {
+        left: 7%;
+    }
+
+    /** About home page **/
+    #about {
+        padding: 2em 2em 0 2em;
+    }
+
+    .about-ev h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .about-ev p {
+        padding: 1em 0;
+    }
+
+    .video {
+        margin-top: 2rem;
+        height: 580px;
+    }
+
+    .video-frame {
+        margin: 2.5%;
+    }
+
+    .video iframe {
+        width: 80%;
+    }
+
+    /* Checkout section home page */
+    .check-out-text {
+        margin: 0 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .check-out-list {
+        width: 40%;
+        margin-top: 1.8rem;
+        margin: 6rem 3rem 8rem 0;
+    }
+
+    /** Footer content **/
+    /********************/
+    footer {
+        z-index: 2;
+    }
+
+    footer div {
+        width: 30%;
+    }
+
+    #social-links i {
+        place-content: center;
+    }
+
+    /**********Insight Page ***********/
+    /* Cover text */
+    .cover-text {
+        right: 7%;
+        margin: 1.5rem;
+        padding: 1em;
+    }
+
+    /** topic content insights page **/
+    .topic-container {
+        grid-template-columns: 47% 47%;
+    }
+
+    .topic-box1 {
+        margin-right: 2rem;
+        height: 650px;
+    }
+
+    .intro p {
+        font-size: 90%;
+    }
+
+    #intro-heading {
+        margin: 2rem 0 1rem 0;
+    }
+
+    .list li {
+        padding-top: 0.6em;
+    }
+
+    /***************** Topic container insights page *************/
+    .topic-box1 {
+        margin: 1.3rem;
+    }
+
+    .topic-box:nth-child(2) {
+        margin: 3rem 0.5rem 0 0;
+    }
+
+    .topic-box:nth-child(5) {
+        margin: 0 5%;
+    }
+
+    .topic-box:nth-child(6) {
+        margin: 4% 5%;
+    }
+
+    /************* Flex Option section content insights page **************/
+
+    .options h3 {
+        margin: 0;
+        padding: 1em 0 1em 0;
+    }
+
+    .charger-img {
+        margin-bottom: 3rem;
+    }
+
+    .wirless p {
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .wirless-img-wrapper {
+        margin-left: 5rem;
+    }
+
+    .option-dynamic {
+        margin: 2.5rem 0;
+    }
+
+    .dynamic {
+        margin-bottom: 6.5rem;
+        margin-right: 2rem;
+    }
+
+    .dynamic h3 {
+        margin: 2rem 0 1rem 2rem;
+    }
+
+    .dynamic p {
+        margin: 0 0 2rem 2rem;
+    }
+
+    .dynamic-img {
+        margin: 1rem 3rem 8rem 0;
+    }
+
+    /**** Sign Up Form Page Content ****/
+    .signup-form {
+        width: 50%;
+    }
+
+    .signup-form h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+/******* Media Query for medium screen sizes from 992px wide and down *******/
+@media screen and (max-width: 992px) {
+
+    /** Header and Navigation links **/
+    .header {
+        width: 100%;
+        line-height: 2rem;
+        justify-content: center;
+        display: grid;
+    }
+
+    #logo {
+        margin: 1.5rem 0 0 0
+    }
+
+    .header-menu {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #nav-menu ul li {
+        margin: 0 1rem 0.7rem 1rem;
+    }
+
+    /* Main Image overlay text*/
+    .overlay-text {
+        font-size: 1.2rem;
+        text-shadow: 0px 0px 2px #F4F4F9;
+        left: 5%;
+    }
+
+    /* About home page*/
+    #about {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .aim {
+        padding: 1rem;
+    }
+
+    #contact-link {
+        padding: 4em 0 4.5em 0;
+    }
+
+    .about-ev h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .video {
+        margin-top: 1rem;
+        padding: 1em 0 0 0;
+    }
+
+    .video-frame {
+        margin: 2%;
+    }
+
+    /******* Checkout list section home page ********/
+    #list-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .check-out-text {
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .check-out-list {
+        width: 90%;
+        box-shadow: 0 0 0.5rem #141414;
+        margin: 1rem 0 10rem 0;
+    }
+
+    .effect {
+        display: none;
+    }
+
+    .effect:hover {
+        display: none;
+    }
+
+
+    .checklist li {
+        line-height: 1.7;
+    }
+
+    .checklist a:hover {
+        display: none;
+    }
+
+    /********* Footer content ********/
+    footer div {
+        font-size: 1.2rem;
+    }
+
+    #social-links {
+        text-align: center;
+    }
+
+    #social-links i {
+        font-size: 2.4rem;
+        margin: 1.5rem 3rem 2rem 3rem;
+    }
+
+    /**********Insight Page ***********/
+    /* Background image cover text */
+    .cover-text {
+        right: 5%;
+        font-size: 1.2rem;
+        text-shadow: 0px 0px 2px #F4F4F9;
+    }
+
+    /*** Topic content insights page ***/
+    .topic-container {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #intro-heading {
+        margin: 4rem 2rem 1rem 2rem;
+    }
+
+    #intro-heading p {
+        margin: 1rem;
+    }
+
+    #chart-header {
+        margin-left: 0;
+        margin-top: 2rem;
+        padding-bottom: 1.3rem;
+        align-self: center;
+    }
+
+    #chart-bar iframe {
+        overflow-y: hidden;
+        margin: 0 2rem 0 0;
+    }
+
+    /******** Topic container insights page ********/
+    .topic-box {
+        margin: 0;
+        height: auto;
+    }
+
+    .topic-box1 {
+        flex-wrap: wrap;
+        margin: 1.5% 5%;
+    }
+
+    .topic-box:nth-child(2) {
+        margin: 2% 5%;
+    }
+
+    .topic-box:nth-child(3) {
+        margin: 4% 5%;
+    }
+
+    .topic-box:nth-child(4) {
+        margin: 4% 5%;
+    }
+
+    /*** Option content insight page ***/
+    .option-container {
+        flex-direction: none;
+    }
+
+    .option-charger,
+    .option-wireless,
+    .option-dynamic {
+        text-align: center;
+        width: 100%;
+        display: grid;
+        margin: auto;
+    }
+
+    .wirless h3 {
+        text-align: center;
+    }
+
+    .wirless-img-wrapper {
+        margin-right: 12.5rem;
+    }
+
+    .wirless img {
+        align-items: center;
+    }
+
+    .dynamic h3 {
+        text-align: center;
+    }
+
+    .dynamic-img {
+        align-items: center;
+    }
+
+    /**** End of Insight Page Content*****/
+}
+
+/**** Sign Up Form Page Content*****/
+.signup-form {
+    width: 80%;
+    left: 10%;
+    padding: 3rem 1.6rem 0.5rem 1.6rem;
+    margin: 12rem 7rem 8em 0;
+}
+
+.signup-form h2 {
+    font-size: 2.5rem;
+}
+
+.signup-form p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/** Start of Footer content **/
+#social-links i {
+    margin: 1.5rem 2rem 2rem 2rem;
+}
+
+
+/**  Media Query for small screen sizes from 768px wide and down **/
+@media screen and (max-width: 768px) {
+
+    /* Headings and logo */
+    .header {
+        min-height: 7vh;
+        flex-direction: column;
+        place-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    #logo {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    /************* Navigation links **********/
+    #nav-menu {
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #nav-menu ul li {
+        margin-inline: 1.8rem;
+    }
+
+    #nav-menu ul>li>.sign-up {
+        border: 1px solid #2A353C;
+        border-radius: 25px;
+        margin-right: 0.3rem;
+    }
+
+    /*** Main Image overlay text***/
+    .overlay-text {
+        font-size: 1.3rem;
+        left: 3%;
+    }
+
+    /* About home page*/
+    #about {
+        margin-top: 2rem;
+    }
+
+    .aim {
+        padding: 0;
+    }
+
+    .about-ev h2 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .about-ev p {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .video {
+        margin: 1.5rem 0;
+    }
+
+    .video-frame {
+        width: 100%;
+    }
+
+    /*********** Checkout list section home page **********/
+    #list-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .check-out-text {
+        margin: 2rem 0 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .check-out-list {
+        width: 90%;
+        box-shadow: none;
+        margin: 1rem 0 8rem 0;
+    }
+
+    .effect {
+        display: none;
+    }
+
+    .effect:hover {
+        display: none;
+    }
+
+    .checklist li {
+        line-height: 1.7;
+    }
+
+    .checklist a:hover {
+        display: none;
+    }
+
+    /******** Footer content ********/
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer div {
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+    }
+
+    #social-links {
+        width: 100%;
+    }
+
+    #social-links i {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /**********Insight Page ***********/
+    /* Background image cover text */
+    .cover-text {
+        font-size: 1rem;
+        right: 3%;
+    }
+
+    /*** Topic content insights page ***/
+    #intro-heading {
+        margin: 2.5rem 0 1rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #chart-header {
+        align-self: center;
+    }
+
+    /******* Topic container insights page *******/
+    .topic-container {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .topic-box1,
+    .topic-box2,
+    .topic-box3,
+    .topic-box4 {
+        grid-column: span 2;
+    }
+
+    .topic-box1 {
+        width: 100%;
+        margin: 0 5%;
+        padding: 0 2rem;
+    }
+
+    .topic-box:nth-child(2) {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .topic-box:nth-child(3),
+    .topic-box:nth-child(4),
+    .topic-box:nth-child(5),
+    .topic-box:nth-child(6) {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    /*** Option content insight page ***/
+    .option-container img,
+    .option-container figure {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .options h3 {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .options p>span {
+        font-weight: bold;
+    }
+
+    /**************** Option container insights page *********************/
+    .charger {
+        margin: 0;
+    }
+
+    .charger-img {
+        width: 100%;
+    }
+
+    .wirless-img-wrapper {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wirless {
+        align-self: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .wirless h3 {
+        margin: 0 3rem 0 1rem;
+    }
+
+    .dynamic-img,
+    .wirless-img,
+    .charger-img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /**** Sign Up Form Page Content*****/
+    .signup-form {
+        width: 80%;
+        left: 10%;
+        margin: 12rem 7rem 5em 0;
+    }
+
+    .signup-form h2 {
+        font-size: 2rem;
+    }
+
+    .signup-form p {
+        font-size: 1.3rem;
+    }
+
+    /*** Text input field ***/
+    label {
+        font-size: 1.2rem;
+    }
+}
+
+/**  Media Query for small screen sizes from 576px wide and down **/
+@media screen and (max-width: 576px) {
+
+    /* Headings and logo */
+    #logo {
+        font-size: 2rem;
+    }
+
+    /************* Navigation links **********/
+    #nav-menu {
+        font-size: 1.2rem;
+    }
+
+    #nav-menu ul li {
+        margin: 0.2rem;
+    }
+
+    /* About home page*/
+    .video {
+        margin: 1.6rem 0;
+    }
+
+    /************ Checkout list section home page *********/
+    .check-out-text {
+        align-self: center;
+    }
+
+    /********* Footer content ********/
+    footer div {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    #social-links i {
+        font-size: 1.3rem;
+        margin: 0.5% 3%;
+    }
+
+    /**********Insight Page ***********/
+    /*** Topic content insights page ***/
+    #intro-heading {
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .misconceptions p {
+        margin-top: 1rem;
+    }
+
+    .benefits p {
+        margin-top: 1rem;
+    }
+
+    .ev-types h4 {
+        font-size: 1rem;
+    }
+
+    /******* Option content insight page ******/
+
+    .options {
+        margin-left: 3rem;
+    }
+
+    .options h3 {
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+
+    .options p {
+        margin: 1rem 1rem 3rem 1rem;
+        padding: 0;
+        text-align: left;
+    }
+
+    /**************** Option container insights page *********************/
+    .charger h3 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .charger ul li {
+        text-align: center;
+    }
+
+    .wirless h3 {
+        margin-top: 2rem;
+    }
+
+    .wirless p {
+        margin: 1rem 0.5rem 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .dynamic p {
+        margin: 1rem 1rem 1rem 1.5rem;
+        text-align: left;
+    }
+
+    /**** Sign Up Form Page Content*****/
+    .signup-form p {
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .flip-wrapper {
+        min-height: 55rem;
+    }
+
+    .flip-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flip-front,
+    .flip-back {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .video {
+        margin: 3rem 0 4rem 0;
+    }
+
+}
